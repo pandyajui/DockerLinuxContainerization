@@ -51,7 +51,7 @@ Containerization:
 Containerization is a lightweight alternative to full machine virtualization that involves encapsulating an application in a container with its own operating environment.Containers use the same host operating system (OS) repeatedly, instead of installing an OS for each guest VM. Containers also provide a way to isolate applications and provide a virtual platform for applications to run on . Two main differences exist between a container and a hypervisor system.<br>
 Virtualization: 
 A virtual machine is a copy of a complete server basically it has its own OS which means the replication of binaries, drivers, or libraries between different VMs running on the same server and a wastage of significant server resources.<br>
-Containerization vs Virtualization:
+Containerization vs Virtualization:<br>
 Containerization provides an isolation to run your application while sharing the same OS resources and in the other hand Virtualization provides the same flavour but it have its own OS so VM systems can run different operating systems and VM will host multiple applications whose mix may change over time versus a container that will normally have a single application.
 In conclusion we can say if we have a 2 Node API running on a Different Node Version it may be possible if we deploy them in the same VM they may Break but if we deploy them in a Container they are completely isolated with each other.
 So basically the use case can be if we want two Environments Test and TestMock we can create two virtual machines on the same server and deploy our packages in a standalone container.
