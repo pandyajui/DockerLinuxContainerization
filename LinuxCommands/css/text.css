@@ -1,5 +1,7 @@
 #lc{
    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 #lcsummary{
     margin-right: 250px;
@@ -9,3 +11,9 @@
    padding-top: 25px;
 }
 
+.logo-image {
+    width: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: -6px;
+}

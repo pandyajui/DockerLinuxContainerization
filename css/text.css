@@ -1,3 +1,16 @@
-#index{
+#index {
     text-align: center;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+.cards {
+    padding-right: 250px;
+    padding-bottom: 50px;
+    padding-left: 250px;
+}
+.logo-image {
+    width: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: -6px;
 }

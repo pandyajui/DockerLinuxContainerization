@@ -1,69 +1,104 @@
 <!doctype html>
 <html lang="en">
-  <head>
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link href="css/text.css" rel="stylesheet">
-      <link href="css/img.css" rel="stylesheet">
+    <link href="css/text.css" rel="stylesheet">
+    <link href="css/img.css" rel="stylesheet">
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 
     <title>Virtualization</title>
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="/DockerLinuxContainerization/index.html">Navbar</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/DockerLinuxContainerization/index.html">Home</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Topics
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <li class="active"><a class="dropdown-item" href="virtualization.html">Virtualization</a></li>
-            <li><a class="dropdown-item" href="/DockerLinuxContainerization/Containerization/containerization.html">Containerization</a></li>
-            <li><a class="dropdown-item" href="/DockerLinuxContainerization/Virtualization_vs_Containerization/Virtualization_vs_Containerization.html">Virtualization vs Containerization</a></li>
-            <li><a class="dropdown-item" href="/DockerLinuxContainerization/Web Server Setup/WebServerSetup.html">Web server Setup</a></li>
-            <li><a class="dropdown-item" href="/DockerLinuxContainerization/LinuxCommands/LinuxCommands.html">Linux Commands</a></li>
-            <li><a class="dropdown-item" href="/DockerLinuxContainerization/Connection of Docker with Python/Connection_of_Docker_with_Python.html">Connection of Docker with Python</a></li>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/DockerLinuxContainerization/index.html">
+            <div class="logo-image">
+                <img src="https://i.imgur.com/TOch3GT.png" class="img-fluid">
+            </div>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page"
+                       href="/DockerLinuxContainerization/index.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                       data-bs-toggle="dropdown" aria-expanded="false">
+                        Topics
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li class="active"><a class="dropdown-item" href="virtualization.html">Virtualization</a></li>
+                        <li><a class="dropdown-item"
+                               href="/DockerLinuxContainerization/Containerization/containerization.html">Containerization</a>
+                        </li>
+                        <li><a class="dropdown-item"
+                               href="/DockerLinuxContainerization/Virtualization_vs_Containerization/Virtualization_vs_Containerization.html">Virtualization
+                            vs Containerization</a></li>
+                        <li><a class="dropdown-item"
+                               href="/DockerLinuxContainerization/Web Server Setup/WebServerSetup.html">Web server
+                            Setup</a></li>
+                        <li><a class="dropdown-item"
+                               href="/DockerLinuxContainerization/LinuxCommands/LinuxCommands.html">Linux Commands</a>
+                        </li>
+                        <li><a class="dropdown-item"
+                               href="/DockerLinuxContainerization/Connection of Docker with Python/Connection_of_Docker_with_Python.html">Connection
+                            of Docker with Python</a></li>
 
-          </ul>
-        </li>
-      </ul>
+                    </ul>
+                </li>
+            </ul>
+        </div>
     </div>
-  </div>
 </nav>
-    <div id="virtualization"><h1>Virtualization</h1></div>
-    <div id="vsummary"><p>What is Virtualization?<br>
-Virtualization creates a layer between hardware component and user. We use virtualization every day when we use cloud and cloud services also it creates virtual hardware for the VM. Virtual computer needs the same components as a regular computer. It needs all the components like storage, NIC, processors, RAM etc..Virtualization takes those physical resources and turns it into virtual resources for VM. Many virtual machines can be created on a single host OS.<br><br>
-      <div id="vimg"><img src="img/virtualization.png" alt="v"></div><br><br>
-      In the above image the computer is running two VMs namely Windows and UBUNTU system. These VMs are on top of the virtualization layer being managed by VM ware Workstation. Virtualization increases efficiency and multitasking which is much essential for the developers
-Benefits of Virtualization:
-      <b><li>Manageability:</b> An ability to copy, isolate, and move virtual machines.</li>
-      <b><li>Sustainability:</b> Less hardware and electricity is utilized.</li>
-      <b><li>Availability:</b> An ability to clone, snapshot and run redundant virtual machines.</li>
-      <b><li>Security:</b> Separating VMs from one and another isolating them from the core system isolation of VMs and applications.</li>
+<div id="virtualization"><h1>Virtualization</h1></div>
+<div id="vsummary"><p>What is Virtualization?<br>
+    Virtualization creates a layer between hardware component and user. We use virtualization every day when we use
+    cloud and cloud services also it creates virtual hardware for the VM. Virtual computer needs the same components as
+    a regular computer. It needs all the components like storage, NIC, processors, RAM etc..Virtualization takes those
+    physical resources and turns it into virtual resources for VM. Many virtual machines can be created on a single host
+    OS.<br><br>
+    <div id="vimg"><img src="img/virtualization.png" alt="v"></div>
+    <br><br>
+    In the above image the computer is running two VMs namely Windows and UBUNTU system. These VMs are on top of the
+    virtualization layer being managed by VM ware Workstation. Virtualization increases efficiency and multitasking
+    which is much essential for the developers
+    Benefits of Virtualization:
+    <b>
+        <li>Manageability:
+    </b> An ability to copy, isolate, and move virtual machines.</li>
+    <b>
+        <li>Sustainability:
+    </b> Less hardware and electricity is utilized.</li>
+    <b>
+        <li>Availability:
+    </b> An ability to clone, snapshot and run redundant virtual machines.</li>
+    <b>
+        <li>Security:
+    </b> Separating VMs from one and another isolating them from the core system isolation of VMs and applications.</li>
 
-</p></div>
+    </p></div>
 
-    <!-- Optional JavaScript; choose one of the two! -->
+<!-- Optional JavaScript; choose one of the two! -->
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
 
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
-    -->
-  </body>
+<!-- Option 2: Separate Popper and Bootstrap JS -->
+<!--
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+-->
+</body>
 </html>

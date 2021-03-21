@@ -1,7 +1,15 @@
 #vc{
     text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 #vcsummary{
     margin-right: 250px;
     margin-left: 250px;
+}
+.logo-image {
+    width: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: -6px;
 }

@@ -1,98 +1,129 @@
 <!doctype html>
 <html lang="en">
-  <head>
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link href="css/text.css" rel="stylesheet">
-      <link href="css/img.css" rel="stylesheet">
+    <link href="css/text.css" rel="stylesheet">
+    <link href="css/img.css" rel="stylesheet">
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 
     <title>Linux Commands</title>
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="/DockerLinuxContainerization/index.html">Navbar</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/DockerLinuxContainerization/index.html">Home</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Topics
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <li><a class="dropdown-item" href="/DockerLinuxContainerization/Virtualization/virtualization.html">Virtualization</a></li>
-            <li><a class="dropdown-item" href="/DockerLinuxContainerization/Containerization/containerization.html">Containerization</a></li>
-            <li><a class="dropdown-item" href="/DockerLinuxContainerization/Virtualization_vs_Containerization/Virtualization_vs_Containerization.html">Virtualization vs Containerization</a></li>
-            <li><a class="dropdown-item" href="/DockerLinuxContainerization/Web Server Setup/WebServerSetup.html">Web server Setup</a></li>
-            <li class="active"><a class="dropdown-item" href="LinuxCommands.html">Linux Commands</a></li>
-            <li><a class="dropdown-item" href="/DockerLinuxContainerization/Connection of Docker with Python/Connection_of_Docker_with_Python.html">Connection of Docker with Python</a></li>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/DockerLinuxContainerization/index.html">
+            <div class="logo-image">
+                <img src="https://i.imgur.com/TOch3GT.png" class="img-fluid">
+            </div>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page"
+                       href="/DockerLinuxContainerization/index.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                       data-bs-toggle="dropdown" aria-expanded="false">
+                        Topics
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item"
+                               href="/DockerLinuxContainerization/Virtualization/virtualization.html">Virtualization</a>
+                        </li>
+                        <li><a class="dropdown-item"
+                               href="/DockerLinuxContainerization/Containerization/containerization.html">Containerization</a>
+                        </li>
+                        <li><a class="dropdown-item"
+                               href="/DockerLinuxContainerization/Virtualization_vs_Containerization/Virtualization_vs_Containerization.html">Virtualization
+                            vs Containerization</a></li>
+                        <li><a class="dropdown-item"
+                               href="/DockerLinuxContainerization/Web Server Setup/WebServerSetup.html">Web server
+                            Setup</a></li>
+                        <li class="active"><a class="dropdown-item" href="LinuxCommands.html">Linux Commands</a></li>
+                        <li><a class="dropdown-item"
+                               href="/DockerLinuxContainerization/Connection of Docker with Python/Connection_of_Docker_with_Python.html">Connection
+                            of Docker with Python</a></li>
 
-          </ul>
-        </li>
-      </ul>
+                    </ul>
+                </li>
+            </ul>
+        </div>
     </div>
-  </div>
 </nav>
 
 <div id="lc"><h1>Linux Commands</h1></div>
-    <!-- Optional JavaScript; choose one of the two! -->
-    <div id="lcsummary"><p>
-      <div class="command"><b>pwd command</b></div>
-      The pwd command is to find out the path of the current working directory (folder) you’re in. The command will return an absolute (full) path, which is basically a path of all the directories that starts with a forward slash (/). An example of an absolute path is /home/username.<br>
-      <div class ="command"><b> cd command</b></div>
-      To navigate through the Linux files and directories, we use the cd command. It requires either the full path or the name of the directory, depending on the current working directory that you’re in. An Example: cd Desktop<br>
-      <div class="command"><b>ls command</b></div>
-       The ls command is used to view the contents of a directory. By default, this command will display the contents of your current working directory.<br>
-      <div class ="command"><b>cp command</b></div>
-      Use the cp command to copy files from the current directory to a different directory. For instance, the command cp rock.jpg /home/username/Pictures would create a copy of rock.jpg (from your current directory) into the Pictures directory.<br>
-      <div class="command"><b>mv command</b></div>
-      The primary use of the mv command is to move files, although it can also be used to rename files.<br>
-      Move Example: mv /home/prithvi/test /home/prithvi/Downloads/<br>
-      Rename Example: mv test test2 
-      <div class="command"><b>mkdir command</b></div>
-      Use mkdir command to make a new directory — if you type mkdir Books it will create a directory called Books.<br>
-      <div class="command"><b>rmdir command</b></div>
-      If you need to delete a directory, use the rmdir command. However, rmdir only allows you to delete empty directories.<br>
-      Example: rmdir Books<br>
-      <div class="command"><b>rm command</b></div>
-      The rm command is used to delete directories and the contents within them.<br>
-      Example: rm -d Downloads<br>
-      Note: Be very careful with this command and double-check which directory you are in. This will delete everything and there is no undo.<br>
-      <div class="command"><b>grep command</b></div>
-      Another basic Linux command is grep. It is used to search for a string of characters in a specified file. <br>
-      Example: grep phoenix sample2<br>
-      <div class="command"><b>sudo command</b></div>
-      Short for “SuperUser Do”, this command enables you to perform tasks that require administrative or root permissions. However, it is not advisable to use this command for daily use because it might be easy for an error to occur if you did something wrong. <br>
-      Example: sudo apt-get update<br>
-      <div class="command"><b>chmod command</b></div>
-      chmod is another Linux command, used to change the read, write, and execute permissions of files and directories. As this command is rather complicated, you can read the full tutorial in order to execute it properly.<br><br>
-      
-      <b>Followings are the steps of setting up and starting a docker container in linux:</b><br>
-        <b>Step 1:</b> Create Dockerfile and add content<br>
-        # vim ./Dockerfile<br>
-        <b>Step 2:</b> Build dockerfile to an image<br>
-        # docker build --tag myDocker:1.0 .<br>
-        <b>Step 3:</b> run a container from the image<br>
-        # docker run --name test1 myDocker:1.0<br>
+<!-- Optional JavaScript; choose one of the two! -->
+<div id="lcsummary"><p>
+    <div class="command"><b>pwd command</b></div>
+    The pwd command is to find out the path of the current working directory (folder) you’re in. The command will return
+    an absolute (full) path, which is basically a path of all the directories that starts with a forward slash (/). An
+    example of an absolute path is /home/username.<br>
+    <div class="command"><b> cd command</b></div>
+    To navigate through the Linux files and directories, we use the cd command. It requires either the full path or the
+    name of the directory, depending on the current working directory that you’re in. An Example: cd Desktop<br>
+    <div class="command"><b>ls command</b></div>
+    The ls command is used to view the contents of a directory. By default, this command will display the contents of
+    your current working directory.<br>
+    <div class="command"><b>cp command</b></div>
+    Use the cp command to copy files from the current directory to a different directory. For instance, the command cp
+    rock.jpg /home/username/Pictures would create a copy of rock.jpg (from your current directory) into the Pictures
+    directory.<br>
+    <div class="command"><b>mv command</b></div>
+    The primary use of the mv command is to move files, although it can also be used to rename files.<br>
+    Move Example: mv /home/prithvi/test /home/prithvi/Downloads/<br>
+    Rename Example: mv test test2
+    <div class="command"><b>mkdir command</b></div>
+    Use mkdir command to make a new directory — if you type mkdir Books it will create a directory called Books.<br>
+    <div class="command"><b>rmdir command</b></div>
+    If you need to delete a directory, use the rmdir command. However, rmdir only allows you to delete empty
+    directories.<br>
+    Example: rmdir Books<br>
+    <div class="command"><b>rm command</b></div>
+    The rm command is used to delete directories and the contents within them.<br>
+    Example: rm -d Downloads<br>
+    Note: Be very careful with this command and double-check which directory you are in. This will delete everything and
+    there is no undo.<br>
+    <div class="command"><b>grep command</b></div>
+    Another basic Linux command is grep. It is used to search for a string of characters in a specified file. <br>
+    Example: grep phoenix sample2<br>
+    <div class="command"><b>sudo command</b></div>
+    Short for “SuperUser Do”, this command enables you to perform tasks that require administrative or root permissions.
+    However, it is not advisable to use this command for daily use because it might be easy for an error to occur if you
+    did something wrong. <br>
+    Example: sudo apt-get update<br>
+    <div class="command"><b>chmod command</b></div>
+    chmod is another Linux command, used to change the read, write, and execute permissions of files and directories. As
+    this command is rather complicated, you can read the full tutorial in order to execute it properly.<br><br>
 
-      </p>
-    </div>
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <b>Followings are the steps of setting up and starting a docker container in linux:</b><br>
+    <b>Step 1:</b> Create Dockerfile and add content<br>
+    # vim ./Dockerfile<br>
+    <b>Step 2:</b> Build dockerfile to an image<br>
+    # docker build --tag myDocker:1.0 .<br>
+    <b>Step 3:</b> run a container from the image<br>
+    # docker run --name test1 myDocker:1.0<br>
 
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
-    -->
-  </body>
+    </p>
+</div>
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+
+<!-- Option 2: Separate Popper and Bootstrap JS -->
+<!--
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+-->
+</body>
 </html>
