@@ -51,47 +51,47 @@
       Key-step 1: After logging into Docker, you can run “docker pull ubuntu” in your command line window.<br>
       <div class="wssimg"> <img src="img/wss2.png" alt="2"></div><br>
       Key-step 2: Use “docker images” to check existing Docker images on your computer. <br>
-      <div class="wssimg"> <img src="img/wss3.PNG" alt="3"></div><br>
+      <div class="wssimg"> <img src="img/wss3.png" alt="3"></div><br>
       <b>Step 3:</b> How To Commit Changes To A Docker Image With Examples <a href="https://phoenixnap.com/kb/how-to-commit-changes-to-docker-image">https://phoenixnap.com/kb/how-to-commit-changes-to-docker-image</a> <b>Note:</b>“-it” of Docker brings you an interactive shell to communicate with the “virtual machine”.<br>
       Key-step 1: Run the Ubuntu image to start a Docker container, then log into this Ubuntu container:<br>
       Command: docker run -it ubuntu:latest /bin/bash
-      <div class="wssimg"> <img src="img/wss4.PNG" alt="4"></div><br>
+      <div class="wssimg"> <img src="img/wss4.png" alt="4"></div><br>
       The container ID is “1ee65e9d5595” in the screenshot.<br>
       Key-step 2: Install applications in this Ubuntu container.<br>
       1) Update system using“apt-get update”.<br>
-      <div class="wssimg"> <img src="img/wss5.PNG" alt="5"></div><br>
+      <div class="wssimg"> <img src="img/wss5.png" alt="5"></div><br>
       2) Install apache2 using “apt-get install apache2”.<br>
-      <div class="wssimg"> <img src="img/wss6.PNG" alt="6"></div><br>
+      <div class="wssimg"> <img src="img/wss6.png" alt="6"></div><br>
       3) Install vim text editor using “apt-get install vim”. <br>
-      <div class="wssimg"> <img src="img/wss7.PNG" alt="7"></div><br>
+      <div class="wssimg"> <img src="img/wss7.png" alt="7"></div><br>
       Key-step 3:Exit Ubuntu container.<br> 
       1) Use command “exit”. <br>
-      <div class="wssimg"> <img src="img/wss8.PNG" alt="8"></div><br>
+      <div class="wssimg"> <img src="img/wss8.png" alt="8"></div><br>
       Key-step 4: Commit container to create a new Docker image. <br>
       1) Check the container using “docker ps -a” <br>
-      <div class="wssimg"> <img src="img/wss9.PNG" alt="9"></div><br>
+      <div class="wssimg"> <img src="img/wss9.png" alt="9"></div><br>
       2) Create a new Docker image using “docker commit 1ee65e9d5595 ubuntu-my_apache2”. “1ee65e9d5595” is the container ID and “ubuntu-my_apache2” is the name of a new Docker image.<br>
-      <div class="wssimg"> <img src="img/wss10.PNG" alt="10"></div><br>
+      <div class="wssimg"> <img src="img/wss10.png" alt="10"></div><br>
       3) Check the news images using “docker images”.<br>
-      <div class="wssimg"> <img src="img/wss11.PNG" alt="11"></div><br>
+      <div class="wssimg"> <img src="img/wss11.png" alt="11"></div><br>
       4. Docker Basics: How to Share Data Between a Docker Container and Host <a href="https://thenewstack.io/docker-basics-how-to-share-data-between-a-docker-container-and-host/">https://thenewstack.io/docker-basics-how-to-share-data-between-a-docker-container-and-host/</a><br>
       Using command “docker run -it -p 127.0.0.1:80:80 -v H:\Docker_tutorial\local_dir:/var/www/html ubuntu-my_apache2 /bin/bash”.<br>
       Parameter explanation:<br> 
       1) -it: log into an interactive shell<br> 
       2) -p: expose an port of Docker container.<br>
       3) -v: bind a host directory to Docker container. “H:\Docker_tutoiral\local_dir” is a directory of the host computer, and “/var/www/htm” is the default location for the entry webpage of a website. Usually we put “index. Html” is this directory.<br>
-      <div class="wssimg"> <img src="img/wss12.PNG" alt="12"></div><br>
+      <div class="wssimg"> <img src="img/wss12.png" alt="12"></div><br>
       5. vi Editor in UNIX <br>
       <a href="https://www.geeksforgeeks.org/vi-editor-unix/">https://www.geeksforgeeks.org/vi-editor-unix/</a><br>
        Vi index.html <br>
       Key step 1: check the present working directory using “pwd” then go the html directory “/var/www/htm” using “cd /var/www/html” <br>
-      <div class="wssimg"> <img src="img/wss13.PNG" alt="13"></div><br>
+      <div class="wssimg"> <img src="img/wss13.png" alt="13"></div><br>
       Key step 2: create an “index.html” file using “vi index.html”. Press “i” key to edit the new “index. Html” file. You can see “-- INSERT --” in the bottom of the command window, which means you can type html source code now. Try the shortcuts of vi to edit your file. <br>
-      <div class="wssimg"> <img src="img/wss14.PNG" alt="14"></div><br>
+      <div class="wssimg"> <img src="img/wss14.png" alt="14"></div><br>
       After finishing your “index.html” file, press the “ESC” key of your computer then type “:wq” to write the file and then quit vi.<br>
-      <div class="wssimg"> <img src="img/wss15.PNG" alt="15"></div><br>
+      <div class="wssimg"> <img src="img/wss15.png" alt="15"></div><br>
       Meanwhile, you can find your “index.html” in your bind directory on your computer. <br>
-      <div class="wssimg"> <img src="img/wss16.PNG" alt="16"></div><br>
+      <div class="wssimg"> <img src="img/wss16.png" alt="16"></div><br>
       6. How to use Docker to host a website. <br>
       1) How To Start, Stop, Or Restart Apache Server On Ubuntu<br>
        <a href="https://phoenixnap.com/kb/ubuntu-start-stop-restart-apache">https://phoenixnap.com/kb/ubuntu-start-stop-restart-apache</a><br>
@@ -100,9 +100,9 @@
       3) Learn Docker in 12 Minutes <br>
       <a href="https://www.youtube.com/watch?v=YFl2mCHdv24">https://www.youtube.com/watch?v=YFl2mCHdv24</a><br>
       Key step 1: Start apache service using “/etc/init.d/apache2 restart” in your Docker container.<br>
-      <div class="wssimg"> <img src="img/wss17.PNG" alt="17"></div><br>
+      <div class="wssimg"> <img src="img/wss17.png" alt="17"></div><br>
       Using a browser of you host computer to access “127.0.0.1”, then you can see your website!.<br>
-      <div class="wssimg"> <img src="img/wss18.PNG" alt="18"></div><br>
+      <div class="wssimg"> <img src="img/wss18.png" alt="18"></div><br>
     </div>
     <!-- Optional JavaScript; choose one of the two! -->
 
