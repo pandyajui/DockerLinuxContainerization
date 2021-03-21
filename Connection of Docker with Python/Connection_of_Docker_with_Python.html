@@ -45,6 +45,44 @@
 </nav>
 
 <div id="cdp"><h1>Connection of Docker with Python</h1></div>
+    <div id="cdpsummary"><p>
+    PyCharm is an Integrated Development Environment (IDE) used in computer programming, specifically for the Python language. It is developed by the Czech company JetBrains. It provides code analysis, a graphical debugger, an integrated unit tester, integration with version control systems (VCSes), and supports web development with Django as well as data science with Anaconda. PyCharm is cross-platform, with Windows, macOS and Linux versions. The Community Edition is released under the Apache License, and there is also Professional Edition with extra features – released under a proprietary license.<br>
+    
+      <h3>Getting started guide</h3>
+      <b>1. Creating the python script</b><br>
+Open PyCharm and create a folder named ‘src’ Create a file under ‘src’ folder named my_script.py and add the below lines<br>
+       # Sample taken from pyStrich GitHub repository<br>
+       # https://github.com/mmulqueen/pyStrich<br>
+        from pystrich.datamatrix import DataMatrixEncoder<br><br>
+ 
+        encoder = DataMatrixEncoder('This is a DataMatrix.')<br>
+        encoder.save('./datamatrix_test.png')<br>
+        print(encoder.get_ascii())<br>
+      
+      <b>2. Creating a blueprint for docker image with python interpreter</b><br>
+      Create a file 'Dockerfile' (without extension) under 'src' folder and add the below lines<br>
+            FROM python:3<br>
+            ADD src /src<br>
+            RUN pip install pystrich<br>
+            CMD [ "python", "./src/my_script.py" ]<br>
+      
+      <b>3. Setting up Docker container as runtime</b><br>
+      <b>4. Executing the python script on Docker</b><br>
+      We will now create a run configuration in PyCharm to execute the python script we created, using the python interpreter running on a Docker image instead of using a local interpreter.<br>
+      Congratulations! You have successfully created and executed your first python program on Docker using Pycharm.<br>
+      Demo: link <a href="https://www.youtube.com/watch?v=5zua74p6vjU">Integrating docker git python with pycharm</a><br>
+
+      
+      
+      
+      
+
+      
+
+  
+      
+      </p>
+    </div>
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
